@@ -1,11 +1,11 @@
 package com.company;
 
 public abstract class Question {
-    String question;
+    String questionText;
     Answer answer;
 
-    public Question(String question, Answer answer) {
-        this.question = question;
+    public Question(String questionText, Answer answer) {
+        this.questionText = questionText;
         this.answer = answer;
     }
 
@@ -22,7 +22,7 @@ public abstract class Question {
 
     @Override
     public String toString() {
-        return this.question;
+        return this.questionText;
     }
 }
 
